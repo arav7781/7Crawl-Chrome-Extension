@@ -42,27 +42,22 @@ The following Mermaid flowchart illustrates how the Website Scraper processes a 
 
 ```mermaid
 flowchart TD
-    A["User Opens Extension 🌐"] --> B["Toggle 'Scrape Website' ✅"]
-    B --> C["Select Language & Visualization 🎨"]
-    C --> D["Click 'Process Content' 🚀"]
-    D --> E["Show Loading Animation 🔄"]
-    E --> F["Scrape Webpage Content 📄"]
-    F --> G["Send Data to Backend 🔗"]
-    G --> H["Backend: Link Scraper Agent 🔍"]
-    H --> I["Backend: Summarizer Agent 🧠"]
-    I --> J["Backend: Translator Agent 🌍"]
-    J --> K["Backend: Visualizer Agent 📊"]
-    K --> L["Store Results in SQLite 💾"]
-    L --> M["Return Results to Frontend 📬"]
-    M --> N["Display Links, Summary, Translation 📝"]
-    N --> O["Render Visualization (Chart.js/Mermaid) 📈"]
-    O --> P["Apply Fade-In Animations ✨"]
-    style A fill:#00b894,stroke:#000,stroke-width:2px
-    style D fill:#0984e3,stroke:#000,stroke-width:2px
-    style E fill:#f59e0b,stroke:#000,stroke-width:2px
-    style G fill:#8b5cf6,stroke:#000,stroke-width:2px
-    style O fill:#06b6d4,stroke:#000,stroke-width:2px
-    style P fill:#ef4444,stroke:#000,stroke-width:2px
+    A["1️⃣ User Opens the Extension"] --> B["2️⃣ Clicks 'Scrape Website'"]
+    B --> C["3️⃣ Chooses Language"]
+    C --> D["4️⃣ Clicks 'Process Content'"]
+    D --> E["5️⃣ Webpage Content is Collected"]
+    E --> F["6️⃣ Content Sent to Server"]
+    F --> G["7️⃣ Server Extracts Links"]
+    G --> H["8️⃣ Creates a Simple Summary"]
+    H --> I["9️⃣ Translates Summary"]
+    I --> J["🔟 Sends Back the Results"]
+    J --> K["✅ User Sees Links, Summary & Translation"]
+
+    style A fill:#00b894,stroke:#000,stroke-width:1.5px
+    style D fill:#0984e3,stroke:#000,stroke-width:1.5px
+    style F fill:#8b5cf6,stroke:#000,stroke-width:1.5px
+    style J fill:#06b6d4,stroke:#000,stroke-width:1.5px
+    style K fill:#34d399,stroke:#000,stroke-width:1.5px
 ```
 
 ## 🚀 Getting Started
