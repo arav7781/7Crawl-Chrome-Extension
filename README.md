@@ -74,7 +74,7 @@ flowchart TD
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/website-scraper.git
+   git clone https://github.com/arav7781/website-scraper.git
    cd website-scraper
    ```
 
