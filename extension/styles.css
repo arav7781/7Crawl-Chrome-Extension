@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+  color: #ffffff;
+  padding: 20px;
+  width: 350px;
+  min-height: 500px;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(30, 30, 30, 0.95);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88; }
+  to { text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88; }
+}
+
+.toggle-section, .language-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #00ff88;
+  font-weight: 600;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 40px;
+  height: 20px;
+  background: #333;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="checkbox"]:checked {
+  background: #00ff88;
+}
+
+input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: translateX(20px);
+}
+
+select {
+  padding: 10px;
+  background: #2a2a2a;
+  border: 1px solid #00ff88;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00ff88;
+}
+
+button {
+  padding: 12px;
+  background: linear-gradient(90deg, #ff0066, #ff6200);
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 98, 0, 0.5);
+}
+
+button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.status, .result {
+  font-size: 0.85rem;
+  color: #ccc;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.result.show, .status.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.result a {
+  color: #00ff88;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.result a:hover {
+  color: #ff0066;
+}
+
+.visualization {
+  margin-top: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+canvas {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #00ff88;
+}

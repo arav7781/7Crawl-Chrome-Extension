@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Scraper</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>7Crawl Website Scraper</h1>
+    <div class="toggle-section">
+      <label for="scrape-toggle">Scrape Website</label>
+      <input type="checkbox" id="scrape-toggle">
+    </div>
+    <div class="language-section">
+      <label for="language">Translate To:</label>
+      <select id="language">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="hi">Hindi</option>
+      </select>
+    </div>
+    <button id="process-btn" disabled>Process Content</button>
+    <div id="status" class="status"></div>
+    <div id="links" class="result"></div>
+    <div id="summary" class="result"></div>
+    <div id="translated" class="result"></div>
+    <div id="visualization" class="visualization">
+      <canvas id="word-freq-chart"></canvas>
+      <img id="graph-img" src="" alt="Word Frequency Chart" style="display: none; max-width: 100%;">
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

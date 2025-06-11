@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Website Scraper Extension",
+    "version": "1.0",
+    "description": "Scrapes website content, summarizes it, translates it, and visualizes word frequency.",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "scripting"
+    ],
+    "host_permissions": [
+      "<all_urls>",
+      "http://localhost:5000/*"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "128": "icon.png"
+    }
+  }
