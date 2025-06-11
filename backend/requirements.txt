@@ -1,0 +1,12 @@
+Flask==3.0.3
+Flask-Cors==5.0.0
+Flask-SocketIO==5.3.7
+gunicorn==23.0.0
+nltk==3.9.1
+langchain==0.3.0
+langchain-groq==0.2.0
+beautifulsoup4==4.12.3
+requests==2.32.3
+plotly==5.24.1
+langgraph==0.2.39
+sqlite3==3.46.1
