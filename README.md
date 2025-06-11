@@ -68,7 +68,7 @@ flowchart TD
 - **Python 3.10+** (for local backend development)
 - **Git** (for cloning the repository)
 - **Docker** (for deployment, optional)
-- **Groq API Key** (sign up at [x.ai](https://x.ai) for free access)
+- **Groq API Key** (sign up at [Groq](https://console.groq.com/keys) for free access)
 
 ### Local Setup
 
@@ -188,11 +188,11 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ## 🌟 Acknowledgments
 
-- [xAI](https://x.ai) for the Grok API
+- [groq](https://console.groq.com/keys) for the Groq API
 - [Chart.js](https://www.chartjs.org) and [Mermaid.js](https://mermaid.js.org) for visualizations
 - [Render](https://render.com) for seamless deployment
 - [Poppins Font](https://fonts.google.com/specimen/Poppins) for stunning typography
 
 ---
 
-Built with ❤️ by [Your Name]. Star the repo ⭐ if you love it!
+Built with ❤️ by Arav Saxena. Star the repo ⭐ if you love it!
