@@ -7,7 +7,7 @@ services:
     environment:
       FLASK_APP: app.py
       FLASK_ENV: production
-      GROQ_API_KEY: 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
+      GROQ_API_KEY: 
     volumes:
       - .:/app
     command: gunicorn --bind 0.0.0.0:5000 app:app
