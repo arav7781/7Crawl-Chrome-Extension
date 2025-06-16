@@ -24,6 +24,7 @@ Welcome to the **Website Scraper**, a powerful Chrome extension that scrapes, su
   - Chart.js (v4.4.1) for word frequency charts
   - Mermaid.js (v10.9.1) for website structure flowcharts
   - Poppins font for modern typography
+    
 - **Backend**:
   - Flask (Python) with Gunicorn for production
   - SQLite for data storage
